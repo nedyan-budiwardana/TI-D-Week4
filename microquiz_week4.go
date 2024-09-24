@@ -23,8 +23,8 @@ func main() {
 	fmt.Scanf("%d\n", &quantity)
 
 	// Kondisi Diskon, kalau kebih dari 5 dapat 10%, selain itu 2%
-	switch quantity {
-	case 5:
+	switch {
+		case quantity > 5:
 		hasil_discount = 0.1 // 10%
 	default:
 		hasil_discount = 0.02 // 2%
